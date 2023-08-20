@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+
+<style>
+
+    body{
+        background-color: rgb(243, 238, 238);
+    }
+
+  .header1{
+    background-image: linear-gradient(to right, #60bc57 , #0aa2c9 );
+    height: 55px;
+   
+  }
+
+  .header1 input{
+    border-radius: 10px;
+    border: none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+   
+  }
+
+  .profile{
+    background-image: linear-gradient(to right, #60bc57 , #0aa2c9 );
+    border: none;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 10px;
+    height: 30px;
+
+  }
+
+  .lang{
+    text-align: left;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #60bc57 , #0aa2c9 );
+    border: none;
+    color: white;
+    margin-left: 10px;
+
+  }
+
+
+  .logo{
+    height: 30px;
+    width: 70px;
+    margin-left: 1000px;
+  
+  }
+
+  .header2{
+    display: inline;
+    background-color:white;
+    height: 1000px;
+    width: 500px;
+    margin-left: 400px;
+    justify-content: center;
+    text-align: center;
+  
+   
+  }
+
+  .groups{
+    text-align: right;
+    margin-top: 10px;
+    background-color: rgb(223, 222, 222);
+    border: none;
+    background-image: linear-gradient(to right, #60bc57 , #0aa2c9 );
+    margin-left: 10px;
+    color: white;
+
+  }
+
+  .onlinechat{
+    text-align: right;
+    margin-top: 10px;
+    border: none;
+    background-image: linear-gradient(to right, #60bc57 , #0aa2c9 );
+    margin-left: 10px;
+    color: white;
+  }
+
+
+  .suggestions{
+    display: inline;
+  }
+
+  .col button{
+    border: none;
+    background-image: linear-gradient(to right, #60bc57 , #0aa2c9 );
+   border-radius: 10px;
+    color: white;
+  }
+
+  .offers{
+    margin-top: 70px;
+    background-color: black;
+  }
+
+
+  .offer{
+    width: 400px;
+    height: 400px;
+  }
+
+  .about{
+    background-color: white;
+  }
+
+  .checked {
+  color: orange;
+}
+
+.footer{
+    background-image: linear-gradient(to right, #60bc57 , #0aa2c9 );
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+
+ 
+
+  
+
+
+
+ 
+</style>
+
+<body>
+
+  <div class="header1">
+  <button class="lang"> EN 🌐</button>
+  <select class="profile" ">
+    <option value="profile">حسابي 👤</option>
+   </select>
+  <input type="text" placeholder="ما الذي تبحث عنه ... .... 🔍" >
+  <img src="logo.png" alt="" class="logo">
+  
+  </div>
+
+    <div class="header2">
+        
+        <button style="color: black; border: none; background-color: white;" > اجهزة لوحية و كمبيوتر</button>
+        <button style="color: black; border: none; background-color: white;"> ساعات ذكية</button>
+        <button style="color: black; border: none; background-color: white;"> الإكسسوارات</button>
+        <button style="color: black; border: none; background-color: white;"> تسلية</button>
+        <button style="color: black; border: none; background-color: white;"> علامات تجارية</button>
+        <button style="color: black; border: none; background-color: white;"> الموبايلات</button>
+
+        <select class="groups" name="groups" onchange="handleSelection()">
+            <option value="all">جميع الفئات</option>
+            <option value="one">الفئة الاولى</option>
+            <option value="two">الفئة الثانية</option>
+            <option value="three">الفئة الثالثة</option>
+        </select>
+
+       
+    </div>
+
+    <div class="ads text-center">
+        <div class="row row-cols-2">
+          <div class="col"><img src="imagination.jpg" alt=""  > <img src="realgame.jpg" alt="" ></div>
+          <div class="col"><img src="samsungwatch.jpg" alt="" style="border-radius: 15px"></div>
+        </div>
+      </div>
+
+      <button class="onlinechat" style=" border-radius: 10px; margin-left: 1400px;">اونلاين شات 📱</button>
+
+      <br><br>
+   <div class="suggestions">
+    <button style="border: none; padding-left: 0px;">➡️ عرض الجميع </button>
+    <label for="" style="font-size: larger;  margin-left: 1300px;">مُقترحة لك </label>
+    <div class="container text-center">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-6">
+          <div class="col"><img src="scooter.png" alt="" style="height: 150px; width: 150px;" > <button style="height: 30px; width: 150px;">  👜أضف الى السلة </button></div>
+          <div class="col"><img src="scooter.png" alt="" style="height: 150px; width: 150px;" > <button style="height: 30px; width: 150px;">  👜أضف الى السلة </button></div>
+          <div class="col"><img src="scooter.png" alt="" style="height: 150px; width: 150px;" > <button style="height: 30px; width: 150px;">  👜أضف الى السلة </button></div>
+          <div class="col"><img src="scooter.png" alt="" style="height: 150px; width: 150px;" > <button style="height: 30px; width: 150px;">  👜أضف الى السلة </button></div>
+          <div class="col"><img src="scooter.png" alt="" style="height: 150px; width: 150px;" > <button style="height: 30px; width: 150px;">  👜أضف الى السلة </button></div>
+          <div class="col"><img src="iphone.png" alt="" style="height: 150px; width: 150px;" > <button style="height: 30px; width: 150px;">  👜أضف الى السلة </button></div>
+        </div>
+      </div>
+   </div>
+
+
+    <div class="products text-center" style="padding-top:70px ;">
+        <div class="row">
+          <div class="col">
+            <img src="smartwatches.jpg" alt=""> <label for="" >منتجات اصلية</label>
+          </div>
+          <div class="col">
+            <img src="enjoy.jpg" alt=""> <label for="" >تسلية وترفيه</label>
+          </div>
+          <div class="col">
+            <img src="phones.jpg" alt=""> <label for="" > الاجهزة الخلوية</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="offers text-center">
+        <div class="row">
+
+            <div class="col"><img src="scooter.png" alt="" style="height: 150px; width: 150px; margin-top: 150px; "> <button style="height: 30px; width: 150px;" >  👜أضف الى السلة </button></div>
+      <div class="col"><img src="scooter.png" alt="" style="height: 150px; width: 150px; margin-top: 150px;" > <button style="height: 30px; width: 150px;">  👜أضف الى السلة </button></div>
+      <div class="col"><img src="scooter.png" alt="" style="height: 150px; width: 150px; margin-top: 150px;" > <button style="height: 30px; width: 150px;">  👜أضف الى السلة </button></div>
+      <div class="col"><img src="scooter.png" alt="" style="height: 150px; width: 150px; margin-top: 150px;" > <button style="height: 30px; width: 150px;">  👜أضف الى السلة </button></div>
+      <div class="col">
+        <img src="offer banner 1.png" alt="" class="offer">
+      </div>
+        </div>
+        <button class="onlinechat" style=" border-radius: 10px; margin-left: 1100px; width: 300px; text-align: center;">عرض جميع العروض</button>
+      </div>
+
+      
+
+
+   <div class="about" >
+    <div class="row" style="padding-bottom: 60px;">
+        <div class="col"><img src="feature_original.png" alt="" style="height: 150px; width: 150px; margin-top: 100px; "> <label for="">منتجات اصلية</label></div>
+  <div class="col"><img src="feature_ship.png" alt="" style="height: 150px; width: 150px; margin-top: 100px;" > <label for="">توصيل مجاني </label></div>
+  <div class="col"><img src="feature_grantee.png" alt="" style="height: 150px; width: 150px; margin-top: 100px;" > <label for="">كفالة سنوية</label></div>
+  <div class="col"><img src="feature_safe.png" alt="" style="height: 150px; width: 150px; margin-top: 100px;" > <label for="">طرق دفع أمنة</label></div>
+  <div class="col">
+<h5 style="margin-top: 100px;">متجر جوال الاكتروني</h5>
+<p style="color: gray;"> منصة تسوق الكتروني رائدة محليا <br>  توفر مجموعة متنوعة من المنتجات <br> للتسوق بسهولة و امان</p>
+  </div>
+    </div>
+   </div>
+
+   <div class="most-paid" style="padding-top: 50px;">
+        <button style="border: none; padding-left: 0px;">➡️ عرض الجميع </button>
+        <label for="" style="font-size: larger;  margin-left: 1200px;">الاكثر مبيعا هذا الاسبوع</label>
+        <div class="container text-center"ُ>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-6">
+              <div class="col"><img src="scooter.png" alt="" style="height: 150px; width: 150px;" > <button style="height: 30px; width: 150px;">  👜أضف الى السلة </button></div>
+              <div class="col"><img src="scooter.png" alt="" style="height: 150px; width: 150px;" > <button style="height: 30px; width: 150px;">  👜أضف الى السلة </button></div>
+              <div class="col"><img src="scooter.png" alt="" style="height: 150px; width: 150px;" > <button style="height: 30px; width: 150px;">  👜أضف الى السلة </button></div>
+              <div class="col"><img src="scooter.png" alt="" style="height: 150px; width: 150px;" > <button style="height: 30px; width: 150px;">  👜أضف الى السلة </button></div>
+              <div class="col"><img src="scooter.png" alt="" style="height: 150px; width: 150px;" > <button style="height: 30px; width: 150px;">  👜أضف الى السلة </button></div>
+              <div class="col"><img src="iphone.png" alt="" style="height: 150px; width: 150px;" > <button style="height: 30px; width: 150px;" >  انتهى من المخزن</button></div>
+            </div>
+          </div>
+       </div>
+  
+
+    <div class="fiber text-center" style="margin-top: 60px;">
+            <div class="row">
+              <div class="col">
+               <img src="fiber.png" alt="" style="width: 650px; height: 200px;">
+              </div>
+              <div class="col">
+                <img src="request_sim.png" alt="" style="width: 650px; height: 200px;">
+              </div>
+            </div>
+      </div>
+   
+
+   <div class="most-shown" style="margin-top: 60px;">
+    <button style="border: none; padding-left: 0px;">➡️ عرض الجميع </button>
+    <label for="" style="font-size: larger;  margin-left: 1250px;">الاكثر مشاهدة</label>
+    <div class="container text-center">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-6">
+          <div class="col"><img src="scooter.png" alt="" style="height: 150px; width: 150px;" > <button style="height: 30px; width: 150px;">  👜أضف الى السلة </button></div>
+          <div class="col"><img src="scooter.png" alt="" style="height: 150px; width: 150px;" > <button style="height: 30px; width: 150px;">  👜أضف الى السلة </button></div>
+          <div class="col"><img src="scooter.png" alt="" style="height: 150px; width: 150px;" > <button style="height: 30px; width: 150px;">  👜أضف الى السلة </button></div>
+          <div class="col"><img src="scooter.png" alt="" style="height: 150px; width: 150px;" > <button style="height: 30px; width: 150px;">  👜أضف الى السلة </button></div>
+          <div class="col"><img src="scooter.png" alt="" style="height: 150px; width: 150px;" > <button style="height: 30px; width: 150px;">  👜أضف الى السلة </button></div>
+          <div class="col"><img src="iphone.png" alt="" style="height: 150px; width: 150px;" > <button style="height: 30px; width: 150px;">  👜أضف الى السلة </button></div>
+        </div>
+      </div>
+   </div>
+
+   <div class="feedback" style="margin-top: 70px; background-color: white;">
+    <button style="border: none; padding-left: 0px; background-color: white;">➡️ تصفح افضل العروض </button>
+    <label for="" style="font-size: larger;  margin-left: 1150px;"> ماذا يقول عملائنا ❤️</label>
+    <div class="container text-center" ">
+        <div class="row">
+          <div class="col">
+            <img src="playstation.png" alt="" style="width: 160px; height: 160px;">
+            <h6> 👤 Anonymous</h6>
+            <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            <p>  منتجات مميزة <br>وجميلة وتوصيل سريع  <br>وسري و مميز و حلو كثير </p> 
+          </div>
+          <div class="col">
+            <img src="playstation.png" alt="" style="width: 160px; height: 160px;">
+            <h6> 👤 Anonymous</h6>
+            <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            <p>  منتجات مميزة <br>وجميلة وتوصيل سريع  <br>وسري و مميز و حلو كثير </p> 
+          </div>
+          <div class="col">
+            <img src="playstation.png" alt="" style="width: 160px; height: 160px;">
+            <h6> 👤 Anonymous</h6>
+            <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            <p>  منتجات مميزة <br>وجميلة وتوصيل سريع  <br>وسري و مميز و حلو كثير </p> 
+          </div>
+        </div>
+      </div>
+      
+   </div>
+
+   <div class="before-footer" style="padding-top: 60px; padding-bottom: 40px;">
+   <div class="container text-center">
+    <div class="row">
+      <div class="col">
+        <ul style="list-style-type: none;">
+            <li>حقوق المستهلك</li>
+            <li>سياسة الخصوصية</li>
+            <li>شروط البيع</li>
+            <li>شروط الاستخدام</li>
+            <li>بع معنا</li>
+            <li>سياسة الضمان</li>
+          </ul>
+      </div>
+      <div class="col">
+        <h4>متواجدين دائما لمساعدتك</h4>
+        <br>
+        <h6> تواصل معنا من خلال الايميل </h6>
+        <br>
+        <h6> ✉️ care@estore.ps</h6>
+      </div>
+      <div class="col">
+        <h4>خليك متابع كل جديد</h4>
+        <h6> اشترك في النشرة الاخبارية وما تفوت اي عرض</h6>
+        <input type="text" name="" id="" placeholder="ادخل بريدك الالكتروني" style="width: 250px; border-radius: 10px; border: none;">
+      <button style="width: 250px; margin-top: 10px;"> اشترك الان</button>
+    </div>
+    </div>
+  </div>
+   </div>
+
+   <div class="footer" style="height: 40px; width: 90pxs; margin-bottom: 0px;">
+         
+            <img src="poweredBy.png" alt="" style="width: 90px; height: 40px; margin-left: 10px;">
+            <p style="color: white; margin-left: 700px; padding-top: 10px;">الحقوق محفوظة ©️ 2022</p>
+         
+        
+      </div>
+
+
+
+
+
+</body>
+</html>
